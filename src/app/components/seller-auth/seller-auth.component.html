@@ -1,14 +1,38 @@
 <div class="seller-auth">
   <div class="signup">
     <h1>Seller sign-up</h1>
+    <!-- we create a local reference assign it to ngform to track the formand its input fields state to check if the form is valid or not
+    and by assigning ngform to the local reference sellersignup we have access to the form state and values in the components class -->
     <form
       #sellerSignUp="ngForm"
       (ngSubmit)="signup(sellerSignUp.value)"
       class="common-form"
     >
-      <input class="form-input" type="text" placeholder="Enter Name" />
-      <input class="form-input" type="password" placeholder="Enter password" />
-      <input class="form-input" type="text" placeholder="Enter email" />
+      <!-- on the ngsubmit we add () to indicate event binding which allows us to specify a method called when the event occurs on the html
+    and the ngsubmut is bound to the sellersingup and the .value is used ot pass the forms values into the method  -->
+      <input
+        class="form-input"
+        ngModel
+        name="name
+      "
+        type="text"
+        placeholder="Enter Name"
+      />
+      <input
+        class="form-input"
+        ngModel
+        name="pasword
+      "
+        type="password"
+        placeholder="Enter password"
+      />
+      <input
+        class="form-input"
+        ngModel
+        name="email"
+        type="text"
+        placeholder="Enter email"
+      />
       <button class="form-button">Sign up</button>
     </form>
   </div>
