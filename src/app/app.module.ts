@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { SellerAuthComponent } from './components/seller-auth/seller-auth.component';
-import { SellerAuthhComponent } from './components/seller-authh/seller-authh.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +13,6 @@ import { SellerAuthhComponent } from './components/seller-authh/seller-authh.com
     HeaderComponent,
     HomeComponent,
     SellerAuthComponent,
-    SellerAuthhComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
