@@ -11,6 +11,24 @@
       "email": "patrick@star.com",
       "password": "12345678",
       "id": 2
+    },
+    {
+      "name\n      ": "Seller",
+      "pasword\n      ": "1234",
+      "email": "Spongebob",
+      "id": 3
+    },
+    {
+      "name\n      ": "test",
+      "pasword\n      ": "23213422",
+      "email": "sdfsafdsa",
+      "id": 4
+    },
+    {
+      "name\n      ": "",
+      "pasword\n      ": "",
+      "email": "",
+      "id": 5
     }
   ]
 }
