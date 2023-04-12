@@ -1,34 +1,28 @@
 {
   "seller": [
     {
-      "name": "spongebob",
-      "email": "spongebob@squarepants.com",
-      "password": "12345678",
+      "name": "test",
+      "email": "test@test.com",
+      "password": "1234",
       "id": 1
     },
     {
-      "name": "patrick",
-      "email": "patrick@star.com",
-      "password": "12345678",
+      "name\n      ": "test",
+      "pasword\n      ": "1234",
+      "email": "test@test.com",
       "id": 2
     },
     {
-      "name\n      ": "Seller",
+      "name\n      ": "test",
       "pasword\n      ": "1234",
-      "email": "Spongebob",
+      "email": "test@test.com",
       "id": 3
     },
     {
       "name\n      ": "test",
-      "pasword\n      ": "23213422",
-      "email": "sdfsafdsa",
+      "pasword\n      ": "1234",
+      "email": "test@test.com",
       "id": 4
-    },
-    {
-      "name\n      ": "",
-      "pasword\n      ": "",
-      "email": "",
-      "id": 5
     }
   ]
 }

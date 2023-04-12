@@ -11,15 +11,11 @@ import { SignUp } from 'src/data-type';
 export class SellerAuthComponent implements OnInit {
   constructor(private seller: SellerService, private router: Router) {}
 
-  ngOnInit(): void {}
-
+  ngOnInit(): void {
+    this.seller.reloadSeller();
+  }
   signup(data: SignUp): void {
     console.warn(data);
-    this.seller.userSingup(data).subscribe((result: any) => {
-      // console.log(result);
-      if (result) {
-        this.router.navigate(['seller-home']);
-      }
-    });
+    this.seller.userSingup(data);
   }
 }
