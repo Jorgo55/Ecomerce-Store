@@ -25,9 +25,10 @@ export class SellerService {
     // console.log('service call');
   }
 
-  // reloadSeller(){
-  //   if(localStorage.getItem('seller')){
-  //     this.
-  //   }
-  // }
+  reloadSeller() {
+    if (localStorage.getItem('seller')) {
+      this.isSellerLoggedIn.next(true);
+      this.router.navigate(['seller-home']);
+    }
+  }
 }

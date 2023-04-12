@@ -24,5 +24,4 @@ export class AuthGuard implements CanActivate {
     | UrlTree {
     return this.sellerService.isSellerLoggedIn;
   }
-  // reloadSeller()
 }
