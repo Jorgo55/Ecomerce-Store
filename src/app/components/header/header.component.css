@@ -6,7 +6,8 @@
 .nav h1 {
   color: black;
   margin: 0;
-  font-size: 40px;
+  font-size: 25px;
+  margin-top: auto;
 }
 .nav ul {
   display: inline-flex;
@@ -16,6 +17,7 @@
   padding-left: -10px;
   padding-top: 15px;
   margin-right: 32px;
+  margin-top: 4.5px;
 }
 
 .nav li {
@@ -37,14 +39,14 @@
 
 .nav .nav-search input {
   flex: 1;
-  color: black;
+  /* color: black; */
   border: 1px solid black;
   height: 35px;
   border-right: 0px;
+  margin-top: 7px;
 }
 .nav .nav-search button {
-  color: black;
-  border: 1px solid black;
-  height: 40px;
-  border-right: 0px;
+  height: 35px;
+  margin-top: 7px;
+  border-radius: 0%;
 }

@@ -11,6 +11,12 @@
       "pasword\n      ": "1234",
       "email": "test@test.com",
       "id": 2
+    },
+    {
+      "name\n      ": "",
+      "pasword\n      ": "1234",
+      "email": "test@test.com",
+      "id": 3
     }
   ]
 }

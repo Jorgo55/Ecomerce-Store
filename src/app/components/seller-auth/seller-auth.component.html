@@ -1,5 +1,5 @@
 <div class="seller-auth">
-  <div class="signup">
+  <div *ngIf="!showLogin" class="signup">
     <h1>Seller sign-up</h1>
     <!-- we create a local reference assign it to ngform to track the formand its input fields state to check if the form is valid or not
     and by assigning ngform to the local reference sellersignup we have access to the form state and values in the components class -->
@@ -33,13 +33,16 @@
         type="text"
         placeholder="Enter email"
       />
-      <button class="form-button">Sign up</button>
+      <button class="form-button btn btn-dark">Sign up</button>
+      <a class="acount" (click)="openLogin()"
+        >Don't have Account? Click to Register!</a
+      >
     </form>
   </div>
 
   <!-- Login -->
 
-  <div class="signup">
+  <div *ngIf="showLogin" class="signup">
     <h1>Seller Log-in</h1>
     <!-- we create a local reference assign it to ngform to track the formand its input fields state to check if the form is valid or not
     and by assigning ngform to the local reference sellersignup we have access to the form state and values in the components class -->
@@ -66,7 +69,10 @@
         type="password"
         placeholder="Enter password"
       />
-      <button class="form-button">Log in</button>
+      <button class="form-button btn btn-dark">Log in</button>
+      <a class="acount" (click)="openSignUp()"
+        >Already have Account? Click to Login!</a
+      >
     </form>
   </div>
 </div>
