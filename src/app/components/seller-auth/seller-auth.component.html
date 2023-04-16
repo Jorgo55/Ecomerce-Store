@@ -44,11 +44,12 @@
 
   <div *ngIf="showLogin" class="signup">
     <h1>Seller Log-in</h1>
+    <p class="error">{{ authError }}</p>
     <!-- we create a local reference assign it to ngform to track the formand its input fields state to check if the form is valid or not
     and by assigning ngform to the local reference sellersignup we have access to the form state and values in the components class -->
     <form
-      #sellerSignUp="ngForm"
-      (ngSubmit)="signup(sellerSignUp.value)"
+      #sellerLogin="ngForm"
+      (ngSubmit)="login(sellerLogin.value)"
       class="common-form"
     >
       <!-- on the ngsubmit we add () to indicate event binding which allows us to specify a method called when the event occurs on the html
