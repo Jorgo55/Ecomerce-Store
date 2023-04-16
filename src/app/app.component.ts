@@ -8,6 +8,4 @@ import { SellerService } from './services/seller.service';
 })
 export class AppComponent {
   title = 'weather-app';
-  constructor() {}
-
 }
