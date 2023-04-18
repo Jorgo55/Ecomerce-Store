@@ -38,15 +38,15 @@ export class SellerService {
     // apo call code
     this.http
       .get(
-        `http://localhost:3000/seller?email${data.email}&password=${data.password}`,
+        `http://localhost:3000/seller?email=${data.email}&password=${data.password}`,
         {
           observe: 'response',
         }
       )
-      .subscribe((result: any) => {
-        if (result && result.body && result.body.length) {
+      .subscribe((result) => {
+        if (result && result.body) {
           console.log('usser logged in ');
-          this.isSellerLoggedIn.next(true);
+          localStorage.setItem('seller', JSON.stringify(result.body));
           this.router.navigate(['seller-home']);
         } else {
           // console.log('user failed to log in');
