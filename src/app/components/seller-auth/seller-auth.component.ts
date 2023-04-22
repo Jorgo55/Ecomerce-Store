@@ -22,15 +22,16 @@ export class SellerAuthComponent implements OnInit {
 
   login(data: SignUp): void {
     this.authError = '';
-    // console.warn(data);
     this.seller.userLogin(data);
     this.seller.isLoginError.subscribe((isError) => {
       if (isError) {
-        // console.log(isError);
-        this.authError = 'Email of password is not correct ';
+        this.authError = 'Email or password is not correct';
+      } else {
+        this.authError = '';
       }
     });
   }
+
   openLogin() {
     this.showLogin = true;
   }

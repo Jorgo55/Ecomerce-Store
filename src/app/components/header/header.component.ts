@@ -6,7 +6,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
-  menuType: String = 'default';
+  menuType: string = 'default';
+  sellerName: string = '';
   constructor(private router: Router) {}
 
   ngOnInit(): void {
@@ -16,11 +17,21 @@ export class HeaderComponent implements OnInit {
         if (localStorage.getItem('seller') && val.url.includes('seller')) {
           this.menuType = 'seller';
           console.log('in seler area');
+          if (localStorage.getItem('seller')) {
+            let sellerStore = localStorage.getItem('seller');
+            let sellerData = sellerStore && JSON.parse(sellerStore);
+            this.sellerName = sellerData.email;
+          }
         } else {
           console.log('outisde seller');
           this.menuType = 'default';
         }
       }
     });
+  }
+
+  logout() {
+    localStorage.removeItem('seller');
+    this.router.navigate(['/']);
   }
 }
