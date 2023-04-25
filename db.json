@@ -71,5 +71,16 @@
       "email": "qdd@dd.comq",
       "id": 12
     }
+  ],
+  "product": [
+    {
+      "name": "iphone 14",
+      "price": 1200,
+      "category": "phone",
+      "color": "blue",
+      "image": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F4982%2Fas-images.apple.com%2Fis%2Fiphone-card-40-iphone14pro-202209_FMT_WHH%3Fwid%3D508%26hei%3D472%26fmt%3Dp-jpg%26qlt%3D95%26.v%3D1663611329204&tbnid=YDIpzCciM9tcBM&vet=12ahUKEwjBgMDI58X-AhVGuKQKHQJWA6MQMygBegQIARAm..i&imgrefurl=https%3A%2F%2Fwww.apple.com%2Fshop%2Fbuy-iphone&docid=ItHrPomqKi9raM&w=508&h=472&q=iphoent&ved=2ahUKEwjBgMDI58X-AhVGuKQKHQJWA6MQMygBegQIARAm",
+      "description": "gud phone",
+      "id": 1
+    }
   ]
 }
