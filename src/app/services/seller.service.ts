@@ -35,7 +35,6 @@ export class SellerService {
 
   userLogin(data: Login) {
     console.log(data);
-    // apo call code
     this.http
       .get(
         `http://localhost:3000/seller?email=${data.email}&password=${data.password}`,
@@ -43,16 +42,21 @@ export class SellerService {
           observe: 'response',
         }
       )
-      .subscribe((result) => {
-        if (result && result.body) {
-          console.log('usser logged in ');
-          localStorage.setItem('seller', JSON.stringify(result.body));
-          this.router.navigate(['seller-home']);
-        } else {
-          // console.log('user failed to log in');
+      .subscribe(
+        (result) => {
+          if (result && result.body) {
+            console.log('user logged in');
+            localStorage.setItem('seller', JSON.stringify(result.body));
+            this.router.navigate(['seller-home']);
+          } else {
+            console.log('user failed to log in');
+            this.isLoginError.emit(true);
+          }
+        },
+        (error) => {
+          console.log('error', error);
           this.isLoginError.emit(true);
         }
-        console.log('result', result);
-      });
+      );
   }
 }

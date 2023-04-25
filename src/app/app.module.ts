@@ -8,6 +8,7 @@ import { HomeComponent } from './components/home/home.component';
 import { SellerAuthComponent } from './components/seller-auth/seller-auth.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SellerHomeComponent } from './components/seller-home/seller-home.component';
+import { SellerAddProductComponent } from './components/seller-add-product/seller-add-product.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { SellerHomeComponent } from './components/seller-home/seller-home.compon
     HomeComponent,
     SellerAuthComponent,
     SellerHomeComponent,
+    SellerAddProductComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
