@@ -9,8 +9,9 @@ export class ProductService {
   constructor(private http: HttpClient) {}
   addProduct(data: Product) {
     // console.log(data);
-    this.http.post(`http://localhost:3000/product`, data).subscribe((res)=>{
-      console.log(res);
-    });
+    return this.http.post(`http://localhost:3000/product`, data);
+    // .subscribe((res) => {
+    //   console.log(res);
+    // });
   }
 }
