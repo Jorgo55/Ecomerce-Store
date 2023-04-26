@@ -22,4 +22,5 @@ export class SellerAddProductComponent implements OnInit {
       setTimeout(() => (this.addProductMessage = undefined), 3000);
     });
   }
+
 }

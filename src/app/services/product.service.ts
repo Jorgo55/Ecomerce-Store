@@ -14,4 +14,7 @@ export class ProductService {
     //   console.log(res);
     // });
   }
+  productList() {
+    return this.http.get(`http://localhost:3000/product`);
+  }
 }
