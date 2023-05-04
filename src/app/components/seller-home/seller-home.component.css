@@ -1,0 +1,17 @@
+table {
+  text-align: left;
+  color: black;
+  border-collapse: collapse;
+}
+
+table td,
+table th {
+  border: black 1px solid;
+  padding: 10px;
+  min-height: 160px;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+}
