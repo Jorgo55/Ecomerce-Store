@@ -9,6 +9,8 @@ import { SellerAuthComponent } from './components/seller-auth/seller-auth.compon
 import { HttpClientModule } from '@angular/common/http';
 import { SellerHomeComponent } from './components/seller-home/seller-home.component';
 import { SellerAddProductComponent } from './components/seller-add-product/seller-add-product.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SellerUpdateProductComponent } from './components/seller-update-product/seller-update-product.component';
 
 @NgModule({
   declarations: [
@@ -18,8 +20,9 @@ import { SellerAddProductComponent } from './components/seller-add-product/selle
     SellerAuthComponent,
     SellerHomeComponent,
     SellerAddProductComponent,
+    SellerUpdateProductComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],
 })
