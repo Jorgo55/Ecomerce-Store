@@ -11,7 +11,7 @@ export class SellerHomeComponent implements OnInit {
   productList: undefined | Product[];
   productMessage: undefined | string;
   icon = faTrash;
-  editIcon = faEdit
+  editIcon = faEdit;
   constructor(private product: ProductService) {}
 
   ngOnInit(): void {
